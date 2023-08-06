@@ -1,22 +1,22 @@
-# Getting started with a simple flow function
+# Login Flow Function
 
-This flow function exposes a HTTP endpoint. You can submit any data to the endpoint via HTTP POST and the flow function will echo it back to you in the HTTP response.
+## Overview
 
-1. Fork this repo into your own GitHub account.
-2. Go to [Flows.network](https://flows.network/flow/new) to create a new flow.
-3. Import the forked repo from your account into flows.network.
-4. Build and deploy.
-5. You will now get a URL endpoint to access the flow function. It is under the *Lambda Endpoint* section on the flows.network web site. You can test it as follows.
+This is a simple flow function written in Rust that responds to HTTP requests with a login status. The function takes `username` and `password` as query parameters in the request and returns a JSON response indicating the login success or failure status.
 
-The example below shows how to query a flow function we have already deployed.
-You can type the following URL into any browser's address bar:
+## Prerequisites
 
-```
-https://code.flows.network/lambda/j4DPFGufPr?msg=I+am+a+Rustacean
-```
+Before you can use this flow function, make sure you have the following installed:
 
-Or, you can use the `curl` command to access the flow function.
+- Rust programming language: https://www.rust-lang.org/learn/get-started
+- Cargo package manager (comes with Rust): https://doc.rust-lang.org/cargo/getting-started/installation.html
+- A suitable IDE, preferably Visual Studio Code: https://code.visualstudio.com/download
+- `curl` command-line tool (optional, for testing)
 
-```
-curl https://code.flows.network/lambda/j4DPFGufPr?msg=I+am+a+Rustacean
-```
+## Setup and Deployment
+
+1. Clone this repository to your local machine:
+
+   ```bash
+   git clone <repository_url>
+   ```
