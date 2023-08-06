@@ -42,6 +42,20 @@ So, the curl function becomes
 ```bash
    curl -v 'https://code.flows.network/lambda/5xcbnHixwT?username=abc&password=xyz'
    ```
+## Adding Images Just for Reference
+
+
+   <figure>
+   <img src="https://github.com/Zekrom-7780/flow_functions_rust/blob/main/Images_to_attach/cmd.png)" alt="Terminal_Output">
+   </figure>
+
+   <figure>
+   <img src="https://github.com/Zekrom-7780/flow_functions_rust/blob/main/Images_to_attach/postman_yes.png)" alt="Postman_Success">
+   </figure>
+   
+   <figure>
+   <img src="https://github.com/Zekrom-7780/flow_functions_rust/blob/main/Images_to_attach/postman_no.png)" alt="Postman_Failure">
+   </figure>
 
 
 
