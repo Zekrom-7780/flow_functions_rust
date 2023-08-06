@@ -46,15 +46,18 @@ So, the curl function becomes
 
 
    <figure>
-   <img src="https://github.com/Zekrom-7780/flow_functions_rust/blob/main/Images_to_attach/cmd.png)" alt="Terminal_Output">
+   <img src="https://github.com/Zekrom-7780/flow_functions_rust/blob/main/Images_to_attach/cmd.png" alt="Terminal_Output">
+   <figcaption>The terminal Output.</figcaption>
    </figure>
-
+   <br><br><br><br>
    <figure>
-   <img src="https://github.com/Zekrom-7780/flow_functions_rust/blob/main/Images_to_attach/postman_yes.png)" alt="Postman_Success">
+   <img src="https://github.com/Zekrom-7780/flow_functions_rust/blob/main/Images_to_attach/postman_yes.png" alt="Postman_Success">
+   <figcaption>Postman_Success.</figcaption>
    </figure>
-   
+   <br><br><br><br>
    <figure>
-   <img src="https://github.com/Zekrom-7780/flow_functions_rust/blob/main/Images_to_attach/postman_no.png)" alt="Postman_Failure">
+   <img src="https://github.com/Zekrom-7780/flow_functions_rust/blob/main/Images_to_attach/postman_no.png" alt="Postman_Failure">
+   <figcaption>Postman_Failure.</figcaption>
    </figure>
 
 
