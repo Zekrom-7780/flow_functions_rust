@@ -1,6 +1,6 @@
 # Login Flow Function
 
-## Overview
+## Overview.
 
 This is a simple flow function written in Rust that responds to HTTP requests with a login status. The function takes `username` and `password` as query parameters in the request and returns a JSON response indicating the login success or failure status.
 
