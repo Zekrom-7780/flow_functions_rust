@@ -16,13 +16,27 @@ async fn handler(headers: Vec<(String, String)>, qry: HashMap<String, Value>, _b
     logger::init();
     log::info!("Headers -- {:?}", headers);
 
-    let msg = qry.get("msg").unwrap();
-    // let msg = String::from_utf8(body).unwrap_or("".to_string());
-    let resp = format!("Welcome to flows.network.\nYou just said: '{}'.\nLearn more at: https://github.com/flows-network/hello-world\n", msg);
+    // Extract username and password from the query parameters
+    let username = qry.get("username").and_then(Value::as_str).unwrap_or("");
+    let password = qry.get("password").and_then(Value::as_str).unwrap_or("");
 
+    // Check if the provided username and password are valid 
+    let login_status = if username == "Zekrom7780" && password == "Random123" {
+        "success"
+    } else {
+        "failure"
+    };
+
+    // Create a JSON response
+    let resp_json = serde_json::json!({
+        "status": login_status,
+        "message": format!("Login {}.", login_status),
+    });
+
+    // Set the response content type to application/json
     send_response(
         200,
-        vec![(String::from("content-type"), String::from("text/html"))],
-        resp.as_bytes().to_vec(),
+        vec![(String::from("content-type"), String::from("application/json"))],
+        resp_json.to_string().as_bytes().to_vec(),
     );
 }
